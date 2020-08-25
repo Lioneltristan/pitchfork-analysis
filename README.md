@@ -16,7 +16,13 @@ My methods allowed for immediate recognition of 2919 artists' genders. While thi
 
 Later I used pandas / sqlite3 / matplotlib / ... to create the dataframes and perform the EDA.
 
-### wikipedia scraping - 3 methods
+## This Repo contains:
+
+### pitchfork scraper
+
+Straightforward webscraping of all the reviews on pitchfork.com with the use of beautifulsoup.
+
+### wikipedia scraper - 3 methods
 
 1. The first method was inspired by this repo https://github.com/rkibria/rkibria.github.com/blob/master/scrape_wiki_categories.md. Wikipedia categorizes every article. Some of these articles could be for example "Female Rapper", "Male African American Musician", ....
 We can then search through these categories to look for keywords such as "female", "Female", "transgender", ...
