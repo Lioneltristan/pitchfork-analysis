@@ -3,18 +3,20 @@ Doing some EDA on pitchforks reviews of the last ~20 years.
 
 ## questions:
 
-1. Have reviews gotten better or worse over the years.
-2. How big is the nostalgia factor - Do albums from the past (pre 1999) receive generally better reviews than contemporary albums
-3. What genres are more likely to do well
-4. Does gender play a role in the rating score and how has the musical landscape changed in regards to gender representation in the past 2 decades
+1. How nostalgic are we really when it comes to music?
+2. Do users and critics usually agree in their assessments?
+3. What does the future of reviews look like?
+4. Is the music industry gender biased?
 
 ## methods
 Using bs4 I scraped all of the reviews from the pitchfork website up to August 19th 2020.
 
 I then scraped wikipedia to look for the genders of all the artists in the list. The dataset contains 10620 individual artists. 
-My methods allowed for immediate recognition of 2919 artists' genders. While this is less than one third of the whole list, keep in mind that a lot of the artists are bands and can as such not necessarily fit a category. Furthermore one third of all entries should be enough to claim statistical significance. More on this later...
+My methods allowed for immediate recognition of 2919 artists' genders. While this is less than one third of the whole list, keep in mind that a lot of the artists are bands and can as such not necessarily fit a category. Furthermore these 2919 make for more than 1/3 (in metacritic even over 40%) of all releases which is enough to get statistically relevant results
 
 Later I used pandas / sqlite3 / matplotlib / ... to create the dataframes and perform the EDA.
+
+I have made the datasets freely available on Kaggle
 
 ## This Repo contains:
 
@@ -33,3 +35,6 @@ This method certainly works to some extent, but comparing to the main method we 
 3. Most Wikipedia pages have an associated Wikidata page, where we can find a lot of info about the associated artist, gender being one of them. This is the most reliable method and is the one we used to get most of the genders. We then filled up some "unknown" ones with the genders we got from the category-approach. The second method should probably not be used as it results in too many errors.
 
 All methods have problems with bands / doubleacts.. One could of course look through bandmembers and individually repeat the above steps to create a more complete image of bands' genders but due to the lack of many bandmembers' wikipedia pages I will not be doing this here.
+
+### 3 different EDA files with the code to the medium articles
+
