@@ -38,3 +38,4 @@ All methods have problems with bands / doubleacts.. One could of course look thr
 
 ### 3 different EDA files with the code to the medium articles
 
+- part 1: Nostalgia https://medium.com/swlh/20-years-of-online-music-reviews-what-has-changed-3f27c75b0293
